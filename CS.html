@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Dynamic Simulator</title>
+
+    <!-- Fonts & Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/CS.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo"><h1>kHN</h1></div>
+      <div class="nav-links">
+        <a href="/index.html">Return to main page</a>
+        <a href="#about">About</a>
+        <a href="#about">GitHub Repo</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero fade-in fade-in-delay-1">
+      <h1>Traffic Dynamic Simulator</h1>
+      <p>
+        A C++ project demonstrating traffic flow with cars, queues, and traffic
+        lights.
+      </p>
+    </section>
+
+    <!-- Demonstration Video -->
+    <section class="video-demo fade-in fade-in-delay-2">
+      <video autoplay muted loop src="/vid/2025-09-25 22-37-05.mkv"></video>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>About the Project</h2>
+      <p>
+        A console-based traffic simulation that models cars, traffic lights, and
+        pedestrian crossings using linked lists, queues, and stacks. The project
+        includes a real-time clock, a color-coded UI, and save/load features to
+        replicate real-world traffic management.
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section class="features fade-in fade-in-delay-3">
+      <div class="left">
+        <img src="/img/linked lists.png" alt="Linked Lists" />
+        <img src="/img/queue.png" alt="Queues" />
+        <img src="/img/stack.png" alt="Stacks" />
+      </div>
+      <div class="right">
+        <div class="feature-card">
+          <span>🚗</span>
+          <div>
+            <h3>Cars in Simulation</h3>
+            <p>
+              Each car is a node linked to the next, forming the vehicle chain.
+            </p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <span>🚶</span>
+          <div>
+            <h3>Pedestrian Crossings</h3>
+            <p>
+              Modeled as connected nodes, allowing traversal across sections.
+            </p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <span>🚦</span>
+          <div>
+            <h3>Vehicle Queueing</h3>
+            <p>
+              Cars move in FIFO order, leaving the queue when the light turns
+              green.
+            </p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <span>💾</span>
+          <div>
+            <h3>Save & Load State</h3>
+            <p>
+              Simulation states can be saved and restored, preserving traffic
+              flow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="conclusion fade-in fade-in-delay-4">
+      <h2>Conclusion</h2>
+      <p>
+        This project demonstrates how fundamental data structures like linked
+        lists, queues, and stacks can be applied to replicate real-world traffic
+        systems through a dynamic simulation.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer-nav">
+      <a href="/photo.html">GitHub</a>
+    </div>
+
+    <footer class="foot">
+      <div class="foot-left">
+        <h1>kHN</h1>
+      </div>
+      <div class="foot-center">
+        <div>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="foot-right">
+        <p>Created by Khan</p>
+      </div>
+    </footer>
+    <script src="/js/CS.js"></script>
+  </body>
+</html>
