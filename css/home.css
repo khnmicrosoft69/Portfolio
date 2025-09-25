@@ -1,0 +1,479 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home-container,
+.home-text {
+  overflow: visible !important;
+}
+
+/* VARIABLES */
+:root {
+  --font-primary: "Poppins", sans-serif;
+
+  /* Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --text-4xl: 4rem;
+
+  /* Weights */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* Colors */
+  --color-text: #eaeaea;
+  --color-muted: #a1a1a1;
+  --color-heading: #ffffff;
+  --color-accent: #d40f0f;
+}
+
+/* GLOBAL */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background: linear-gradient(90deg, #000000, #1a1a1a);
+  
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 8vh;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: azure;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: azure;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d40f0f;
+}
+
+.menu {
+  display: none;
+}
+
+/* HERO SECTION */
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  text-align: left;
+  z-index: 1;
+}
+.home-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.home-text {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 150px;
+  gap: 1.5rem;
+}
+
+.home-text h2 {
+  font-size: 1.5rem;
+  color: #942415;
+  font-weight: var(--weight-medium);
+  margin-bottom: -2rem;
+}
+
+.home-text h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: var(--weight-bold);
+  line-height: 1.2;
+  color: var(--color-heading);
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.home-text button:hover {
+  background: linear-gradient(90deg, #431a1a, #710d0d);
+  transform: scale(1.05);
+}
+
+/* ABOUT ME */
+#aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 10rem auto 0;
+  text-align: center;
+  gap: 2rem;
+}
+#aboutMe h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+#aboutMe p {
+  max-width: 80%;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  font-weight: var(--weight-light);
+}
+
+/* FIELDS */
+.fields {
+  width: 100%;
+  height: 70vh;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.fields a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: azure;
+  font-size: 2em;
+  font-weight: var(--weight-light);
+  opacity: 0.3;
+  transition: all 0.4s ease;
+}
+.fields a:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.field1 {
+  display: flex;
+  flex-direction: column;
+  background: url("/img/portraits/me5.jpg") center/cover no-repeat;
+}
+.field1 p {
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+.field2 {
+  display: flex;
+  flex-direction: column;
+  background: url("/img/portraits/me6.jpeg") center/cover no-repeat;
+}
+.field2 p {
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+.field3 {
+  display: flex;
+  flex-direction: column;
+  background: url("/img/me.jpg") center/cover no-repeat;
+}
+.field3 p {
+  font-size: 1rem;
+  margin-top: -0.5rem;
+}
+
+/* ABOUT DETAILS BOXES */
+.about-details {
+  width: 80%;
+  height: 50vh;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.about-left {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-left h1:first-child {
+  font-size: 4rem;
+  color: #942415;
+  font-weight: var(--weight-extrabold);
+}
+.about-right {
+  flex: 1;
+  display: flex;
+  gap: 1.5rem;
+}
+.about-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-box {
+  flex: 1;
+  background-color: #201f1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.about-box h1 {
+  font-size: 4rem;
+  color: #942415;
+}
+.about-box p {
+  font-size: 1rem;
+  font-weight: var(--weight-regular);
+}
+.school-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.school-logo img {
+  height: 8rem;
+  width: 8rem;
+}
+
+/* FEATURED PROJECTS */
+#featured-projects {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10rem auto 0;
+  gap: 0.5rem;
+  padding-top: 3rem;
+}
+#featured-projects h1,
+#featured-projects p {
+  align-self: center;
+}
+.featured {
+  display: flex;
+  height: 60vh;
+  gap: 2rem;
+  margin-top: 4rem;
+  justify-self: center;
+  align-self: center;
+}
+.featured video {
+  flex: 1;
+  height: 20rem;
+}
+.project-names {
+  display: flex;
+  margin-top: 1rem;
+}
+.project-names div {
+  flex: 1;
+}
+.project-names h1 {
+  font-size: 1.1rem;
+}
+.project-names a {
+  color: azure;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.project-names a:hover {
+  color: #672828;
+  text-decoration: none;
+}
+
+/* CONTACT */
+.contact {
+  background-color: #242322;
+  height: 50vh;
+  width: 70%;
+  display: flex;
+  justify-self: center;
+  margin: 15rem auto 0;
+}
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3rem;
+  gap: 1rem;
+}
+.contact-left h1 {
+  font-size: 3rem;
+  margin-right: 3rem;
+}
+.contact-right {
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-right button {
+  width: 40%;
+  height: 7vh;
+  background: linear-gradient(90deg, #d40f0f, #431a1a);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.contact-right button:hover {
+  background: linear-gradient(90deg, #ac5959, #d40f0f);
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer-nav {
+  height: 5vh;
+  margin-top: 11rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: azure;
+  transition: 0.3s;
+}
+.footer-nav a:hover {
+  text-decoration: none;
+  color: #431a1a;
+  transform: scale(1.05);
+}
+.foot {
+  background-color: #242322;
+  height: 20vh;
+  margin-top: 2rem;
+  display: flex;
+}
+.foot-left {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.foot-center {
+  flex: 1;
+}
+.foot-center div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.foot-center a {
+  color: #a1a1a1;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+.foot-right {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+}
+.foot-right p {
+  margin-left: 2rem;
+}
+
+/* FADE BACKGROUND */
+.fade-bg {
+  height: 100.1rem;
+  width: 100%;
+  position: absolute;
+  top: 100rem;
+  z-index: -10;
+  opacity: 0.1;
+  animation: fadeInOut 6s ease-in-out infinite;
+}
+
+.about-details p {
+  font-size: var(--text-base);
+  justify-self: center;
+  align-self: center;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* FADE & SLIDE ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 0.6s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

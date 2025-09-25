@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --color-text: #eaeaea;
+  --color-heading: #ffffff;
+  --color-accent: #d40f0f;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background: black;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  color: azure;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: var(--text-base);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.hero h1 {
+  font-size: var(--text-3xl);
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+/* Demonstration Video */
+.video-demo {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.video-demo video {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 4rem 2rem;
+  width: 80%;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: var(--text-2xl);
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: var(--text-base);
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Features */
+.features {
+  width: 85%;
+  margin: 6rem auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.features .left {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.features img {
+  height: 8rem;
+  width: 8rem;
+  filter: invert(1);
+}
+
+.features .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feature-card span {
+  font-size: 2rem;
+}
+
+.feature-card h3 {
+  font-size: var(--text-lg);
+  margin-bottom: 0.5rem;
+  color: var(--color-heading);
+}
+
+.feature-card p {
+  font-size: var(--text-base);
+}
+
+/* Conclusion */
+.conclusion {
+  text-align: center;
+  margin: 6rem auto;
+  width: 80%;
+}
+
+.conclusion h2 {
+  font-size: var(--text-2xl);
+  margin-bottom: 1rem;
+}
+
+.conclusion p {
+  font-size: var(--text-base);
+  max-width: 700px;
+  margin: auto;
+}
+
+/* FOOTER */
+.footer-nav {
+  height: 5vh;
+  margin-top: 11rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: azure;
+  transition: 0.3s;
+}
+.footer-nav a,
+.nav-links a:hover {
+  text-decoration: none;
+  color: #431a1a;
+  transform: scale(1.05);
+}
+.foot {
+  background-color: #242322;
+  height: 20vh;
+  margin-top: 2rem;
+  display: flex;
+}
+.foot-left {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.foot-center {
+  flex: 1;
+}
+.foot-center div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.foot-center a {
+  color: #a1a1a1;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+.foot-right {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+}
+.foot-right p {
+  margin-left: 2rem;
+}
+
+/* FADE & SLIDE ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 0.6s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
