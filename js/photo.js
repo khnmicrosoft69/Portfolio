@@ -19,26 +19,26 @@ faders.forEach((fader) => {
 
 // Image sources
 const images = [
-  "/img/portraits/1.JPG",
-  "/img/portraits/2.JPG",
-  "/img/portraits/3.JPG",
-  "/img/portraits/4.JPG",
-  "/img/portraits/5.JPG",
-  "/img/portraits/6.JPG",
-  "/img/portraits/7.JPG",
-  "/img/portraits/8.JPG",
-  "/img/portraits/9.JPG",
-  "/img/portraits/portrait1.JPG",
-  "/img/candids/10.JPG",
-  "/img/candids/11.JPG",
-  "/img/candids/12.JPG",
-  "/img/candids/13.JPG",
-  "/img/candids/14.JPG",
-  "/img/candids/15.JPG",
-  "/img/candids/16.JPG",
-  "/img/candids/candid1.JPG",
-  "/img/candids/event1.JPG",
-  "/img/candids/20.JPG",
+  "img/portraits/1.JPG",
+  "img/portraits/2.JPG",
+  "img/portraits/3.JPG",
+  "img/portraits/4.JPG",
+  "img/portraits/5.JPG",
+  "img/portraits/6.JPG",
+  "img/portraits/7.JPG",
+  "img/portraits/8.JPG",
+  "img/portraits/9.JPG",
+  "img/portraits/portrait1.JPG",
+  "img/candids/10.JPG",
+  "img/candids/11.JPG",
+  "img/candids/12.JPG",
+  "img/candids/13.JPG",
+  "img/candids/14.JPG",
+  "img/candids/15.JPG",
+  "img/candids/16.JPG",
+  "img/candids/candid1.JPG",
+  "img/candids/event1.JPG",
+  "img/candids/20.JPG",
 ];
 
 // Shuffle array function
@@ -121,3 +121,4 @@ document.querySelectorAll(".fields a").forEach((card) => {
     card.style.backgroundImage = `url(${bg})`;
   }
 });
+
