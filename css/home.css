@@ -199,7 +199,7 @@ header {
 .field1 {
   display: flex;
   flex-direction: column;
-  background: url("/img/portraits/me5.jpg") center/cover no-repeat;
+  background: url("img/portraits/me5.jpg") center/cover no-repeat;
 }
 .field1 p {
   font-size: 1rem;
@@ -208,7 +208,7 @@ header {
 .field2 {
   display: flex;
   flex-direction: column;
-  background: url("/img/portraits/me6.jpeg") center/cover no-repeat;
+  background: url("img/portraits/me6.jpeg") center/cover no-repeat;
 }
 .field2 p {
   font-size: 1rem;
@@ -217,7 +217,7 @@ header {
 .field3 {
   display: flex;
   flex-direction: column;
-  background: url("/img/me.jpg") center/cover no-repeat;
+  background: url("img/me.jpg") center/cover no-repeat;
 }
 .field3 p {
   font-size: 1rem;
@@ -477,3 +477,4 @@ header {
     transform: translateY(0);
   }
 }
+
